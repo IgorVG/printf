@@ -4,7 +4,7 @@ printf function similar to one from standard C library
 
 Following options are supported:
 
-
+|. |. |. |. |. |. |. |
 |--|--|--|--|--|--|--|
 |length	| d i |	u o x | f  |	c |	s |	p |
 |(none)	| int	| unsigned int|	double|	int |	char*|	void* |
