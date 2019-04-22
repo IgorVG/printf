@@ -34,4 +34,4 @@ printf function similar to one from standard C library
 # Additional specifiers:
 B with l or L flags to print a binary representation of float, double or long double
 # Remarks: 
-Floats, double and long doubles conversion is done using 9-digit series to string method described here http://www.corsix.org/;
+Floats, double and long doubles conversion is done using 9-digit series to string method described here http://www.corsix.org/
