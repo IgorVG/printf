@@ -4,9 +4,8 @@ printf function similar to one from standard C library
 
 Following options are supported:
 
-|. |. |. |. |. |. |. |
-|--|--|--|--|--|--|--|
-|length	| d i |	u o x | f  |	c |	s |	p |
+|__length__| __d i__ |	__u o x__ | __f__  |	__c__ |	__s__|	__p__|
+|:--:|--|--|--|--|--|--|
 |(none)	| int	| unsigned int|	double|	int |	char*|	void* |
 |hh	| signed char |	unsigned char	|	| | | |
 |h	| short int	|unsigned short int	|	| | | |
