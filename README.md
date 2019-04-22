@@ -3,8 +3,9 @@ printf function similar to one from standard C library
 <img src="ft_printf.gif" alt="push-swap-animated" width="600"/>
 
 Following options are supported:
-Supportred 
-||specifiers|
+
+|             |specifiers|
+|-------------|----------|
 |length	| d i |	u o x | f  |	c |	s |	p |
 |(none)	| int	| unsigned int|	double|	int |	char*|	void* |
 |hh	| signed char |	unsigned char	|	| | | |
