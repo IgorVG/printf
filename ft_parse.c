@@ -54,19 +54,19 @@ static void		ft_parse_type(const char **s, t_param *prm)
 
 static void		ft_parse_wdpr(const char **s, t_param *prm)
 {
-	if (ft_isdigit(**s))
+	if (ft_isdigit_printf(**s))
 	{
-		prm->wdt = ft_atoi(*s);
-		while (ft_isdigit(*(*s + 1)))
+		prm->wdt = ft_atoi_printf(*s);
+		while (ft_isdigit_printf(*(*s + 1)))
 			(*s)++;
 	}
 	else if (**s == '.')
 	{
-		if (ft_isdigit(*(*s + 1)))
-			prm->prc = ft_atoi(*s + 1);
+		if (ft_isdigit_printf(*(*s + 1)))
+			prm->prc = ft_atoi_printf(*s + 1);
 		else
 			prm->prc = 0;
-		while (ft_isdigit(*(*s + 1)))
+		while (ft_isdigit_printf(*(*s + 1)))
 			(*s)++;
 	}
 }
@@ -80,7 +80,7 @@ int				ft_parse(const char **s, t_param *prm)
 			ft_parse_prefix(s, prm);
 		else if (**s == 'h' || **s == 'l' || **s == 'L')
 			ft_parse_type(s, prm);
-		else if (**s == '.' || ft_isdigit(**s))
+		else if (**s == '.' || ft_isdigit_printf(**s))
 			ft_parse_wdpr(s, prm);
 		else if (ft_istype(**s))
 			return (1);

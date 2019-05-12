@@ -134,10 +134,10 @@ void				ft_printbuf_sprefix(char *b, int p, intmax_t *arg);
 /*
 ** libft_printf.c
 */
-int					ft_strlen(const char *s);
+int					ft_strlen_printf(const char *s);
 int					ft_strlen_unicode(const wchar_t *s);
-int					ft_atoi(const char *str);
-int					ft_isdigit(char c);
+int					ft_atoi_printf(const char *str);
+int					ft_isdigit_printf(char c);
 
 /*
 ** print_buf.c

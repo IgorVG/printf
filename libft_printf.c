@@ -24,7 +24,7 @@ int			ft_strlen_unicode(const wchar_t *s)
 	return (s - tmp);
 }
 
-int			ft_strlen(const char *s)
+int			ft_strlen_printf(const char *s)
 {
 	size_t			len;
 	unsigned int	*x;
@@ -48,7 +48,7 @@ int			ft_strlen(const char *s)
 	}
 }
 
-int			ft_atoi(const char *str)
+int			ft_atoi_printf(const char *str)
 {
 	int			d;
 	int			integer;
@@ -69,7 +69,7 @@ int			ft_atoi(const char *str)
 	return (integer);
 }
 
-int			ft_isdigit(char c)
+int			ft_isdigit_printf(char c)
 {
 	return (c >= '0' && c <= '9');
 }

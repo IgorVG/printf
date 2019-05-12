@@ -31,7 +31,7 @@ int		ft_arg_db_len(const char *s, int p, double *arg)
 	uintmax_t	*ptr;
 
 	ptr = (uintmax_t *)arg;
-	len = ft_strlen(s);
+	len = ft_strlen_printf(s);
 	if ((p & 1) || (p >> 3 & 1) || (*ptr >> 63))
 		len += 1;
 	return (len);
@@ -43,7 +43,7 @@ int		ft_arg_long_db_len(const char *s, int p, long double *arg)
 	uintmax_t	*ptr;
 
 	ptr = (uintmax_t *)arg;
-	len = ft_strlen(s);
+	len = ft_strlen_printf(s);
 	if ((p & 1) || (p >> 3 & 1) || (ptr[1] >> 15) & 1)
 		len += 1;
 	return (len);

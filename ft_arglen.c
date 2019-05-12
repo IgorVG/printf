@@ -69,6 +69,6 @@ int				ft_arg_len(intmax_t arg, char c, t_param *prm)
 	else if (c == 's' && prm->p >> 7 & 1)
 		return (ft_strlen_unicode((wchar_t *)arg));
 	else if (c == 's')
-		return (ft_strlen((char *)arg));
+		return (ft_strlen_printf((char *)arg));
 	return (0);
 }
