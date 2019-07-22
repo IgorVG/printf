@@ -14,7 +14,7 @@
 
 void		ft_flush(char *dst)
 {
-	write(1, dst, BUF_SIZE);
+	write(1, dst, BUF_M);
 	g_bcn++;
 }
 
@@ -61,7 +61,7 @@ void		ft_printbuf_pad(char *dst, char c, int len)
 {
 	while (len > 0)
 	{
-		if (g_bcn == BUF_M)
+		if ((g_bcn & BUF_M) == BUF_M)
 			ft_flush(dst);
 		dst[g_bcn & BUF_M] = c;
 		g_bcn++;
